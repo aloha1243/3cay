@@ -70,7 +70,21 @@ class Game {
             } else if (intMay < intBan) {
                 this.ketQua.innerHTML = 'Ban thang May'
             } else {
-                this.ketQua.innerHTML = 'Ban hoa May'
+                if (NEW_MAY[0] > NEW_BAN[0]) {
+                    this.ketQua.innerHTML = 'Ban thua May'
+                } else {
+                    this.ketQua.innerHTML = 'Ban thang May'
+                }
+                if (NEW_MAY[1] > NEW_BAN[1]) {
+                    this.ketQua.innerHTML = 'Ban thua May'
+                } else {
+                    this.ketQua.innerHTML = 'Ban thang May'
+                }
+                if (NEW_MAY[2] > NEW_BAN[2]) {
+                    this.ketQua.innerHTML = 'Ban thua May'
+                } else {
+                    this.ketQua.innerHTML = 'Ban thang May'
+                }
             }
             if (MAY.length !== 3 || BAN.length !== 3) {
                 window.location.reload()
